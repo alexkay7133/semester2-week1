@@ -9,7 +9,29 @@
 -- 2. Load this script: .read task1.sql
 -- 3. Exit SQLite: .exit
 
+-- Continent      Population  AreaSqMi  PopDensityPerSqMi  CoastlineRatio  NetMigration  
+--InfantMortalityPer1000  GDPPerCapita  LiteracyPercent  PhonesPer1000  ArablePercent  
+--CropsPercent  OtherPercent  Climate  Birthrate  Deathrate  Agriculture  Industry  
+--Service
 
 -- write your sql code here
 
-SELECT * from countries;
+-- SELECT * FROM countries;
+
+-- SELECT Country, Population FROM countries;
+
+-- SELECT Country FROM countries WHERE Continent='Europe';
+
+-- SELECT Country FROM countries WHERE Population > 100000000;
+
+-- SELECT Country FROM countries WHERE Continent='Asia' AND GDPPerCapita > 20000;
+
+-- SELECT Country FROM countries WHERE LiteracyPercent < 70;
+
+-- SELECT Country FROM countries WHERE CoastlineRatio = 0;
+
+-- SELECT Country FROM countries WHERE Country LIKE 'A%';
+
+-- SELECT Country FROM countries WHERE Country LIKE '%United%';
+
+-- SELECT Country FROM countries WHERE Birthrate > Deathrate AND Population > 50000000;
